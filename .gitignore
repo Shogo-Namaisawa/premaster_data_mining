@@ -14,5 +14,6 @@ wheels/
 
 # Jupyter Notebook
 .ipynb_checkpoints/
-
+appendix/
+lecture_note/
 
