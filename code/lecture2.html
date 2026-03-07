@@ -8371,16 +8371,867 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=672c2b7e">
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=7c42194c">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="%E8%BE%9E%E6%9B%B8">辞書<a class="anchor-link" href="#%E8%BE%9E%E6%9B%B8">¶</a></h3>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=9262aefa">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [15]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span> 
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">course</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'semester'</span><span class="p">:</span><span class="s1">'S'</span><span class="p">,</span> <span class="s1">'title'</span><span class="p">:</span><span class="s1">'data mining '</span><span class="p">,</span> <span class="s1">'year'</span><span class="p">:</span><span class="s1">'2025'</span><span class="p">,</span> <span class="s1">'nuit'</span><span class="p">:</span><span class="s1">'2'</span><span class="p">}</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">course</span><span class="p">[</span><span class="s1">'title'</span><span class="p">]</span> <span class="o">+</span> <span class="s1">', '</span> <span class="o">+</span> <span class="n">course</span><span class="p">[</span><span class="s1">'year'</span><span class="p">]</span> <span class="o">+</span> <span class="s1">'_'</span> <span class="o">+</span> <span class="n">course</span><span class="p">[</span><span class="s1">'semester'</span><span class="p">])</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>data mining , 2025_S
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=76b6f259">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="%E8%BE%9E%E6%9B%B8%E3%81%AEkeys,-values,-items%E3%83%A1%E3%82%BD%E3%83%83%E3%83%89">辞書のkeys, values, itemsメソッド<a class="anchor-link" href="#%E8%BE%9E%E6%9B%B8%E3%81%AEkeys,-values,-items%E3%83%A1%E3%82%BD%E3%83%83%E3%83%89">¶</a></h3>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=672c2b7e">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [16]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">course</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'semester'</span><span class="p">:</span><span class="s1">'Spring'</span><span class="p">,</span> <span class="s1">'title'</span><span class="p">:</span><span class="s1">'data mining '</span><span class="p">,</span> <span class="s1">'year'</span><span class="p">:</span><span class="s1">'2025'</span><span class="p">,</span> <span class="s1">'nuit'</span><span class="p">:</span><span class="s1">'2'</span><span class="p">}</span>
+
+<span class="c1"># 左側</span>
+<span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">course</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">k</span><span class="p">)</span>
+
+<span class="c1"># 右側</span>
+<span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">course</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">k</span><span class="p">)</span>
+
+<span class="c1"># 両方</span>
+<span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">course</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">k</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>semester
+title
+year
+nuit
+Spring
+data mining 
+2025
+2
+('semester', 'Spring')
+('title', 'data mining ')
+('year', '2025')
+('nuit', '2')
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=81b4f56a">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="%E8%BE%9E%E6%9B%B8%E3%81%A8in%E6%BC%94%E7%AE%97%E5%AD%90%EF%BC%88get()%E3%81%A8pop()%EF%BC%89">辞書とin演算子（<code>get()</code>と<code>pop()</code>）<a class="anchor-link" href="#%E8%BE%9E%E6%9B%B8%E3%81%A8in%E6%BC%94%E7%AE%97%E5%AD%90%EF%BC%88get()%E3%81%A8pop()%EF%BC%89">¶</a></h3>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=6e411f97">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [17]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">course</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'semester'</span><span class="p">:</span><span class="s1">'Spring'</span><span class="p">,</span> <span class="s1">'title'</span><span class="p">:</span><span class="s1">'data mining '</span><span class="p">,</span> <span class="s1">'year'</span><span class="p">:</span><span class="s1">'2025'</span><span class="p">}</span>
+
+<span class="c1"># 第一引数がyearの値があればその値、なければ2017とする</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">course</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'year'</span><span class="p">,</span> <span class="mi">2017</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">course</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'nuit'</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+
+<span class="n">course</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'semester'</span><span class="p">:</span><span class="s1">'Spring'</span><span class="p">,</span> <span class="s1">'title'</span><span class="p">:</span><span class="s1">'data mining '</span><span class="p">,</span> <span class="s1">'year'</span><span class="p">:</span><span class="s1">'2025'</span><span class="p">,</span> <span class="s1">'unit'</span><span class="p">:</span><span class="s1">'2'</span><span class="p">}</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">course</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s1">'unit'</span><span class="p">))</span>
+<span class="c1"># popしたから抜けている</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">course</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>2025
+1
+2
+{'semester': 'Spring', 'title': 'data mining ', 'year': '2025'}
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=8afe00a4">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="%E6%96%87%E5%AD%97%E5%88%97">文字列<a class="anchor-link" href="#%E6%96%87%E5%AD%97%E5%88%97">¶</a></h3><p>文字列は1文字の要素が並んだリスト（正確にはタプル）とみなすことができる。</p>
+<p>for 文での要素の繰り返し処理、 len() 関数による長さの取得、 in 演算子による要素の検索など、リストに対して可能なことの多くは文字列に対しても可能</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=6b180efc">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [18]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">course</span> <span class="o">=</span> <span class="s1">'datamining'</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">course</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">course</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">course</span><span class="p">[:</span><span class="mi">4</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">course</span><span class="p">[</span><span class="mi">4</span><span class="p">:])</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">course</span><span class="p">)):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">course</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">'data'</span> <span class="ow">in</span> <span class="n">course</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>d
+g
+data
+mining
+0 d
+1 a
+2 t
+3 a
+4 m
+5 i
+6 n
+7 i
+8 n
+9 g
+True
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=a794f3c4">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="upper()%E3%81%A8lower()%E3%81%A7%E6%96%87%E5%AD%97%E5%88%97%E3%82%92%E5%A4%A7%E6%96%87%E5%AD%97%E3%81%A8%E5%B0%8F%E6%96%87%E5%AD%97%E3%81%AB%E3%81%99%E3%82%8B%E3%81%93%E3%81%A8%E3%81%8C%E3%81%A7%E3%81%8D%E3%82%8B"><code>upper()</code>と<code>lower()</code>で文字列を大文字と小文字にすることができる<a class="anchor-link" href="#upper()%E3%81%A8lower()%E3%81%A7%E6%96%87%E5%AD%97%E5%88%97%E3%82%92%E5%A4%A7%E6%96%87%E5%AD%97%E3%81%A8%E5%B0%8F%E6%96%87%E5%AD%97%E3%81%AB%E3%81%99%E3%82%8B%E3%81%93%E3%81%A8%E3%81%8C%E3%81%A7%E3%81%8D%E3%82%8B">¶</a></h3><ul>
+<li>ut.upper() や ut.lower() だけでは、元の文字列 ut は変更されません。</li>
+<li>ut = ut.lower() として変数に代入することで、 ut を変更します。</li>
+</ul>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=124bc8cb">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [19]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">ut</span> <span class="o">=</span> <span class="s1">'The University of Tokyo'</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">ut</span><span class="o">.</span><span class="n">upper</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">ut</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span>
+
+<span class="n">ut</span> <span class="o">=</span> <span class="n">ut</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">ut</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>THE UNIVERSITY OF TOKYO
+the university of tokyo
+THE UNIVERSITY OF TOKYO
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=17a8d784">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="join()%E3%81%A8split()%E3%81%A7%E6%96%87%E5%AD%97%E5%88%97%E3%82%92%E9%80%A3%E7%B5%90%E3%81%97%E3%81%9F%E3%82%8A%E5%88%86%E5%89%B2%E3%81%97%E3%81%A6%E3%83%AA%E3%82%B9%E3%83%88%E3%81%AB%E3%81%97%E3%81%9F%E3%82%8A"><code>join()</code>と<code>split()</code>で文字列を連結したり分割してリストにしたり<a class="anchor-link" href="#join()%E3%81%A8split()%E3%81%A7%E6%96%87%E5%AD%97%E5%88%97%E3%82%92%E9%80%A3%E7%B5%90%E3%81%97%E3%81%9F%E3%82%8A%E5%88%86%E5%89%B2%E3%81%97%E3%81%A6%E3%83%AA%E3%82%B9%E3%83%88%E3%81%AB%E3%81%97%E3%81%9F%E3%82%8A">¶</a></h3>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=537229ac">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [20]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="s1">':'</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s1">'理1'</span><span class="p">,</span><span class="s1">'理2'</span><span class="p">,</span><span class="s1">'理3'</span><span class="p">,</span><span class="s1">'文1'</span><span class="p">,</span><span class="s1">'文2'</span><span class="p">,</span><span class="s1">'文3'</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[20]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>'理1:理2:理3:文1:文2:文3'</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=d588ff46">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [21]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="s1">'理1 : 理2 : 理3 : 文1 : 文2 : 文3'</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">' : '</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[21]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>['理1', '理2', '理3', '文1', '文2', '文3']</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=148aba0b">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="count()%E3%81%A8replace()%E3%81%A7%E6%96%87%E5%AD%97%E5%88%97%E3%82%92%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%81%97%E3%81%9F%E3%82%8A%E7%BD%AE%E6%8F%9B%E3%81%97%E3%81%9F%E3%82%8A"><code>count()</code>と<code>replace()</code>で文字列をカウントしたり置換したり<a class="anchor-link" href="#count()%E3%81%A8replace()%E3%81%A7%E6%96%87%E5%AD%97%E5%88%97%E3%82%92%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%81%97%E3%81%9F%E3%82%8A%E7%BD%AE%E6%8F%9B%E3%81%97%E3%81%9F%E3%82%8A">¶</a></h3>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=5297f5f3">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [22]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># 文字列を検索して、引数で指定した文字列が含まれている個数を返</span>
+<span class="s1">'the university of tokyo'</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s1">'t'</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[22]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>3</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=5fb722c5">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [23]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="s1">'I love Tokyo'</span>
+
+
+<span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">'Tokyo'</span><span class="p">,</span> <span class="s1">'Paris'</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>I love Paris
+I love Tokyo
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=7628a170">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E5%85%A5%E5%87%BA%E5%8A%9B">ファイルの入出力<a class="anchor-link" href="#%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E5%85%A5%E5%87%BA%E5%8A%9B">¶</a></h3><h3 id="open(),-read(),-readlines()"><code>open()</code>, <code>read()</code>, <code>readlines()</code><a class="anchor-link" href="#open(),-read(),-readlines()">¶</a></h3><ol>
+<li>open() 関数を呼び出し、 File オブジェクトを取得する</li>
+<li>File オブジェクトの read() や write() メソッドを呼び出して読み書きする</li>
+<li>File オブジェクトの close() オブジェクトを呼び出してファイルを閉じる</li>
+</ol>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=8f9558cb">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [24]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">infile</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'../data/data_mining.txt'</span><span class="p">)</span>
+
+<span class="n">content</span> <span class="o">=</span> <span class="n">infile</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">content</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Data mining is the process of discovering patterns in large data sets involving methods at the intersection of machine learning, statistics, and database systems.
+It is an essential process where intelligent methods are applied to extract data patterns.
+It is an interdisciplinary subfield of computer science.
+The overall goal of the data mining process is to extract information from a data set and transform it into an understandable structure for further use.
+Aside from the raw analysis step, it involves database and data management aspects, data pre-processing, model and inference considerations, interestingness metrics, complexity considerations, post-processing of discovered structures, visualization, and online updating.
+Data mining is the analysis step of the knowledge discovery in databases process, or KDD.
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=d1bab9db">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [25]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">infile</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'../data/data_mining.txt'</span><span class="p">)</span>
+<span class="n">content</span> <span class="o">=</span> <span class="n">infile</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">content</span><span class="p">)</span>
+<span class="c1"># '\n'は改行を表す文字</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'</span><span class="se">\n</span><span class="s1">'</span><span class="p">)</span>
+<span class="c1"># 1行ずつ出力</span>
+<span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">content</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>['Data mining is the process of discovering patterns in large data sets involving methods at the intersection of machine learning, statistics, and database systems.\n', 'It is an essential process where intelligent methods are applied to extract data patterns.\n', 'It is an interdisciplinary subfield of computer science.\n', 'The overall goal of the data mining process is to extract information from a data set and transform it into an understandable structure for further use.\n', 'Aside from the raw analysis step, it involves database and data management aspects, data pre-processing, model and inference considerations, interestingness metrics, complexity considerations, post-processing of discovered structures, visualization, and online updating.\n', 'Data mining is the analysis step of the knowledge discovery in databases process, or KDD.']
+
+
+Data mining is the process of discovering patterns in large data sets involving methods at the intersection of machine learning, statistics, and database systems.
+
+It is an essential process where intelligent methods are applied to extract data patterns.
+
+It is an interdisciplinary subfield of computer science.
+
+The overall goal of the data mining process is to extract information from a data set and transform it into an understandable structure for further use.
+
+Aside from the raw analysis step, it involves database and data management aspects, data pre-processing, model and inference considerations, interestingness metrics, complexity considerations, post-processing of discovered structures, visualization, and online updating.
+
+Data mining is the analysis step of the knowledge discovery in databases process, or KDD.
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=4a33d0bf">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="write()%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AB%E6%9B%B8%E3%81%8D%E8%BE%BC%E3%81%BF">write()ファイルに書き込み<a class="anchor-link" href="#write()%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AB%E6%9B%B8%E3%81%8D%E8%BE%BC%E3%81%BF">¶</a></h3><ul>
+<li>open() 関数の第2引数に 'w' を渡すと書き込みモードでファイルを開きます。書き込みモードでは、既存のファイルの内容を上書きして書き直します。</li>
+<li>open() 関数の第2引数に 'a' を渡すと追記モードでファイルを開きます。追記モードでは、既存のファイルの終端に追加して書き込みます。</li>
+<li>書き込みモードでも追記モードでも、もし引数で指定したファイルが存在しなければ、新たに空のファイルが引数で示したパスに作成されます。</li>
+<li>ファイルを読み書きした後は、 close() メソッドを呼び出して閉じます。</li>
+</ul>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=1d91b15a">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [26]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">myfile</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'../data/greeting.txt'</span><span class="p">,</span> <span class="s1">'w'</span><span class="p">)</span>
+<span class="n">myfile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">'hello</span><span class="se">\n</span><span class="s1">'</span><span class="p">)</span>
+<span class="n">myfile</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=571de11a">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [27]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">myfile</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'../data/greeting.txt'</span><span class="p">,</span><span class="s1">'a'</span><span class="p">)</span>
+<span class="n">myfile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">'Bonjour</span><span class="se">\n</span><span class="s1">'</span><span class="p">)</span>
+<span class="n">myfile</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+<span class="n">myfile</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'../data/greeting.txt'</span><span class="p">)</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">myfile</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="n">myfile</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>hello
+Bonjour
+
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=1b7c0e9f">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="csv-%E3%83%A2%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB">csv モジュール<a class="anchor-link" href="#csv-%E3%83%A2%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB">¶</a></h3>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=d1af56ed">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [28]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">csv</span>
+<span class="n">score</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'../data/exam_score.csv'</span><span class="p">)</span>
+
+<span class="c1"># readerで行ごとに順番処理可能</span>
+<span class="n">score_reader</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">(</span><span class="n">score</span><span class="p">)</span>
+<span class="c1"># listで一行１リストで結果を返せる</span>
+<span class="n">score_data</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">score_reader</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">score_data</span><span class="p">)</span>
+
+<span class="c1"># 2行目の3列目</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">score_data</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">2</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>[['shakai', 'kokugo', 'sugaku', 'rika'], ['30', '43', '51', '63'], ['39', '21', '49', '56'], ['29', '30', '23', '57'], ['95', '87', '77', '100'], ['70', '71', '78', '67'], ['67', '53', '56', '61'], ['29', '26', '44', '52'], ['56', '54', '37', '59'], ['45', '21', '7', '44'], ['68', '41', '29', '81'], ['50', '43', '80', '73'], ['70', '61', '61', '71'], ['46', '37', '36', '56'], ['23', '24', '20', '36'], ['77', '54', '58', '84'], ['15', '8', '22', '29'], ['37', '23', '23', '32'], ['55', '42', '85', '86'], ['0', '5', '0', '24'], ['35', '48', '24', '42'], ['60', '80', '64', '72'], ['70', '52', '75', '60'], ['82', '84', '86', '88'], ['44', '22', '18', '13'], ['54', '14', '33', '43'], ['80', '63', '59', '73'], ['46', '47', '72', '56'], ['48', '63', '72', '83'], ['51', '41', '63', '60'], ['37', '18', '38', '51'], ['31', '29', '28', '36'], ['35', '52', '40', '65'], ['50', '41', '50', '64'], ['33', '28', '65', '43'], ['27', '20', '17', '29'], ['36', '27', '62', '58'], ['77', '70', '91', '72'], ['61', '49', '71', '71'], ['84', '90', '87', '100'], ['78', '43', '59', '55'], ['7', '17', '18', '27'], ['57', '32', '36', '55'], ['60', '60', '85', '66'], ['17', '19', '25', '28'], ['82', '86', '75', '84'], ['37', '36', '45', '41'], ['40', '27', '35', '45'], ['72', '73', '94', '96'], ['74', '63', '79', '69'], ['87', '85', '84', '93'], ['66', '34', '57', '50'], ['90', '68', '64', '78'], ['43', '19', '29', '35'], ['24', '15', '1', '17'], ['41', '34', '28', '43'], ['42', '16', '29', '43'], ['33', '23', '48', '53'], ['29', '15', '20', '21'], ['83', '83', '58', '71'], ['73', '81', '94', '85'], ['66', '23', '78', '41'], ['71', '38', '80', '61'], ['62', '57', '91', '83'], ['47', '51', '69', '80'], ['53', '33', '50', '38'], ['61', '33', '50', '49'], ['21', '20', '39', '21'], ['74', '66', '65', '78'], ['72', '68', '42', '66'], ['50', '44', '47', '56'], ['5', '27', '29', '24'], ['32', '28', '14', '43'], ['23', '25', '26', '34'], ['34', '20', '23', '30'], ['70', '87', '84', '88'], ['9', '25', '23', '33'], ['61', '37', '39', '55'], ['34', '40', '36', '33'], ['38', '31', '33', '31'], ['72', '41', '36', '44'], ['32', '28', '32', '41'], ['52', '29', '32', '36'], ['96', '76', '90', '77'], ['58', '31', '46', '46'], ['35', '23', '17', '38'], ['40', '38', '7', '21'], ['48', '23', '41', '40'], ['46', '53', '34', '30'], ['32', '21', '24', '28'], ['50', '28', '29', '31'], ['76', '63', '74', '72'], ['64', '40', '30', '49'], ['62', '43', '14', '48'], ['76', '42', '58', '51'], ['81', '50', '61', '63'], ['69', '49', '30', '34'], ['89', '83', '73', '81'], ['27', '29', '34', '40'], ['39', '24', '26', '24'], ['62', '39', '42', '40'], ['73', '74', '74', '61'], ['49', '18', '27', '20'], ['35', '18', '28', '25'], ['36', '4', '15', '43'], ['16', '16', '25', '22'], ['60', '48', '67', '29'], ['74', '60', '57', '78'], ['22', '9', '6', '26'], ['47', '21', '26', '25'], ['43', '32', '74', '55'], ['84', '51', '76', '84'], ['65', '43', '38', '70'], ['49', '26', '62', '50'], ['31', '14', '8', '16'], ['83', '54', '44', '45'], ['87', '86', '77', '78'], ['68', '59', '60', '63'], ['68', '53', '41', '57'], ['28', '4', '37', '29'], ['42', '29', '33', '48'], ['42', '31', '47', '44'], ['70', '57', '60', '61'], ['58', '62', '40', '66'], ['57', '40', '43', '28'], ['8', '12', '0', '20'], ['44', '32', '31', '28'], ['65', '43', '36', '49'], ['81', '53', '78', '81'], ['57', '53', '75', '58'], ['64', '36', '20', '31'], ['86', '62', '78', '54'], ['34', '27', '48', '52'], ['84', '57', '45', '64'], ['4', '9', '5', '11'], ['23', '9', '5', '26'], ['66', '43', '54', '72'], ['53', '23', '28', '30'], ['70', '41', '44', '34'], ['78', '53', '45', '54'], ['39', '19', '5', '32'], ['74', '62', '44', '58'], ['33', '33', '32', '42'], ['43', '24', '29', '47'], ['54', '21', '43', '28'], ['26', '15', '13', '19'], ['58', '17', '34', '19'], ['29', '15', '37', '19'], ['73', '60', '59', '54'], ['59', '25', '45', '48'], ['58', '17', '31', '23'], ['70', '56', '76', '62'], ['19', '12', '9', '28'], ['29', '21', '26', '30'], ['32', '7', '14', '18'], ['77', '64', '87', '71'], ['91', '69', '100', '83'], ['50', '31', '53', '44'], ['63', '32', '43', '52'], ['42', '16', '27', '22'], ['68', '28', '60', '69'], ['70', '23', '43', '50'], ['82', '78', '80', '88'], ['0', '8', '2', '9'], ['45', '26', '29', '24'], ['73', '31', '43', '32'], ['60', '85', '89', '80']]
+51
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=4335b089">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="reader%E3%81%8B%E3%82%89%E3%81%AEfor%E6%96%87">readerからのfor文<a class="anchor-link" href="#reader%E3%81%8B%E3%82%89%E3%81%AEfor%E6%96%87">¶</a></h3>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=09549fd9">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [29]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">score</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'../data/exam_score.csv'</span><span class="p">)</span>
+<span class="n">score_reader</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">(</span><span class="n">score</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">score_reader</span><span class="p">:</span>
+    <span class="c1"># 、行番号を取得するのに、 Reader オブジェクトの line_num 変数を使う</span>
+    <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">score_reader</span><span class="o">.</span><span class="n">line_num</span><span class="p">)</span><span class="o">+</span><span class="s1">' :'</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">row</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>1 :['shakai', 'kokugo', 'sugaku', 'rika']
+2 :['30', '43', '51', '63']
+3 :['39', '21', '49', '56']
+4 :['29', '30', '23', '57']
+5 :['95', '87', '77', '100']
+6 :['70', '71', '78', '67']
+7 :['67', '53', '56', '61']
+8 :['29', '26', '44', '52']
+9 :['56', '54', '37', '59']
+10 :['45', '21', '7', '44']
+11 :['68', '41', '29', '81']
+12 :['50', '43', '80', '73']
+13 :['70', '61', '61', '71']
+14 :['46', '37', '36', '56']
+15 :['23', '24', '20', '36']
+16 :['77', '54', '58', '84']
+17 :['15', '8', '22', '29']
+18 :['37', '23', '23', '32']
+19 :['55', '42', '85', '86']
+20 :['0', '5', '0', '24']
+21 :['35', '48', '24', '42']
+22 :['60', '80', '64', '72']
+23 :['70', '52', '75', '60']
+24 :['82', '84', '86', '88']
+25 :['44', '22', '18', '13']
+26 :['54', '14', '33', '43']
+27 :['80', '63', '59', '73']
+28 :['46', '47', '72', '56']
+29 :['48', '63', '72', '83']
+30 :['51', '41', '63', '60']
+31 :['37', '18', '38', '51']
+32 :['31', '29', '28', '36']
+33 :['35', '52', '40', '65']
+34 :['50', '41', '50', '64']
+35 :['33', '28', '65', '43']
+36 :['27', '20', '17', '29']
+37 :['36', '27', '62', '58']
+38 :['77', '70', '91', '72']
+39 :['61', '49', '71', '71']
+40 :['84', '90', '87', '100']
+41 :['78', '43', '59', '55']
+42 :['7', '17', '18', '27']
+43 :['57', '32', '36', '55']
+44 :['60', '60', '85', '66']
+45 :['17', '19', '25', '28']
+46 :['82', '86', '75', '84']
+47 :['37', '36', '45', '41']
+48 :['40', '27', '35', '45']
+49 :['72', '73', '94', '96']
+50 :['74', '63', '79', '69']
+51 :['87', '85', '84', '93']
+52 :['66', '34', '57', '50']
+53 :['90', '68', '64', '78']
+54 :['43', '19', '29', '35']
+55 :['24', '15', '1', '17']
+56 :['41', '34', '28', '43']
+57 :['42', '16', '29', '43']
+58 :['33', '23', '48', '53']
+59 :['29', '15', '20', '21']
+60 :['83', '83', '58', '71']
+61 :['73', '81', '94', '85']
+62 :['66', '23', '78', '41']
+63 :['71', '38', '80', '61']
+64 :['62', '57', '91', '83']
+65 :['47', '51', '69', '80']
+66 :['53', '33', '50', '38']
+67 :['61', '33', '50', '49']
+68 :['21', '20', '39', '21']
+69 :['74', '66', '65', '78']
+70 :['72', '68', '42', '66']
+71 :['50', '44', '47', '56']
+72 :['5', '27', '29', '24']
+73 :['32', '28', '14', '43']
+74 :['23', '25', '26', '34']
+75 :['34', '20', '23', '30']
+76 :['70', '87', '84', '88']
+77 :['9', '25', '23', '33']
+78 :['61', '37', '39', '55']
+79 :['34', '40', '36', '33']
+80 :['38', '31', '33', '31']
+81 :['72', '41', '36', '44']
+82 :['32', '28', '32', '41']
+83 :['52', '29', '32', '36']
+84 :['96', '76', '90', '77']
+85 :['58', '31', '46', '46']
+86 :['35', '23', '17', '38']
+87 :['40', '38', '7', '21']
+88 :['48', '23', '41', '40']
+89 :['46', '53', '34', '30']
+90 :['32', '21', '24', '28']
+91 :['50', '28', '29', '31']
+92 :['76', '63', '74', '72']
+93 :['64', '40', '30', '49']
+94 :['62', '43', '14', '48']
+95 :['76', '42', '58', '51']
+96 :['81', '50', '61', '63']
+97 :['69', '49', '30', '34']
+98 :['89', '83', '73', '81']
+99 :['27', '29', '34', '40']
+100 :['39', '24', '26', '24']
+101 :['62', '39', '42', '40']
+102 :['73', '74', '74', '61']
+103 :['49', '18', '27', '20']
+104 :['35', '18', '28', '25']
+105 :['36', '4', '15', '43']
+106 :['16', '16', '25', '22']
+107 :['60', '48', '67', '29']
+108 :['74', '60', '57', '78']
+109 :['22', '9', '6', '26']
+110 :['47', '21', '26', '25']
+111 :['43', '32', '74', '55']
+112 :['84', '51', '76', '84']
+113 :['65', '43', '38', '70']
+114 :['49', '26', '62', '50']
+115 :['31', '14', '8', '16']
+116 :['83', '54', '44', '45']
+117 :['87', '86', '77', '78']
+118 :['68', '59', '60', '63']
+119 :['68', '53', '41', '57']
+120 :['28', '4', '37', '29']
+121 :['42', '29', '33', '48']
+122 :['42', '31', '47', '44']
+123 :['70', '57', '60', '61']
+124 :['58', '62', '40', '66']
+125 :['57', '40', '43', '28']
+126 :['8', '12', '0', '20']
+127 :['44', '32', '31', '28']
+128 :['65', '43', '36', '49']
+129 :['81', '53', '78', '81']
+130 :['57', '53', '75', '58']
+131 :['64', '36', '20', '31']
+132 :['86', '62', '78', '54']
+133 :['34', '27', '48', '52']
+134 :['84', '57', '45', '64']
+135 :['4', '9', '5', '11']
+136 :['23', '9', '5', '26']
+137 :['66', '43', '54', '72']
+138 :['53', '23', '28', '30']
+139 :['70', '41', '44', '34']
+140 :['78', '53', '45', '54']
+141 :['39', '19', '5', '32']
+142 :['74', '62', '44', '58']
+143 :['33', '33', '32', '42']
+144 :['43', '24', '29', '47']
+145 :['54', '21', '43', '28']
+146 :['26', '15', '13', '19']
+147 :['58', '17', '34', '19']
+148 :['29', '15', '37', '19']
+149 :['73', '60', '59', '54']
+150 :['59', '25', '45', '48']
+151 :['58', '17', '31', '23']
+152 :['70', '56', '76', '62']
+153 :['19', '12', '9', '28']
+154 :['29', '21', '26', '30']
+155 :['32', '7', '14', '18']
+156 :['77', '64', '87', '71']
+157 :['91', '69', '100', '83']
+158 :['50', '31', '53', '44']
+159 :['63', '32', '43', '52']
+160 :['42', '16', '27', '22']
+161 :['68', '28', '60', '69']
+162 :['70', '23', '43', '50']
+163 :['82', '78', '80', '88']
+164 :['0', '8', '2', '9']
+165 :['45', '26', '29', '24']
+166 :['73', '31', '43', '32']
+167 :['60', '85', '89', '80']
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=c5017170">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Writer-%E3%82%AA%E3%83%96%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%A7%E3%83%87%E3%83%BC%E3%82%BF%E3%82%92CSV%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AB%E6%9B%B8%E3%81%8D%E8%BE%BC%E3%82%80">Writer オブジェクトでデータをCSVファイルに書き込む<a class="anchor-link" href="#Writer-%E3%82%AA%E3%83%96%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%A7%E3%83%87%E3%83%BC%E3%82%BF%E3%82%92CSV%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AB%E6%9B%B8%E3%81%8D%E8%BE%BC%E3%82%80">¶</a></h3>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=2f681967">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [30]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">score</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'../data/my_score.csv'</span><span class="p">,</span> <span class="s1">'w'</span><span class="p">)</span>
+
+<span class="c1"># 書き込みモードに</span>
+<span class="n">score_writer</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">writer</span><span class="p">(</span><span class="n">score</span><span class="p">)</span>
+
+<span class="c1"># writerowで行ごとに書き込み</span>
+<span class="n">score_writer</span><span class="o">.</span><span class="n">writerow</span><span class="p">([</span><span class="s1">'user'</span><span class="p">,</span> <span class="s1">'kokugo'</span><span class="p">,</span> <span class="s1">'sugaku'</span><span class="p">])</span>
+<span class="n">score_writer</span><span class="o">.</span><span class="n">writerow</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span><span class="mi">50</span><span class="p">])</span>
+<span class="n">score_writer</span><span class="o">.</span><span class="n">writerow</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span><span class="mi">30</span><span class="p">,</span><span class="mi">30</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[30]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>9</pre>
 </div>
 </div>
 </div>
