@@ -7829,7 +7829,7 @@ $$</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
@@ -7843,7 +7843,7 @@ $$</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">cos_sim</span><span class="p">(</span><span class="n">vec1</span><span class="p">,</span> <span class="n">vec2</span><span class="p">):</span>
@@ -7900,7 +7900,7 @@ $$</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
@@ -7908,6 +7908,37 @@ $$</p>
 <span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=1f2d1a34">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+
+<span class="c1"># カレントディレクトリを取得</span>
+<span class="n">cwd</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">cwd</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>/Users/namaisawashogo/my-project/premaster/data_mining/code
+</pre>
 </div>
 </div>
 </div>
@@ -7928,12 +7959,12 @@ $$</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [15]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">course_list</span> <span class="p">():</span>
   <span class="n">courses</span> <span class="o">=</span> <span class="p">[]</span>
-  <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"data/course_list.csv"</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+  <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"../data/course_list.csv"</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
     <span class="n">reader</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
 
     <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">reader</span><span class="p">:</span>
@@ -7949,7 +7980,7 @@ $$</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [16]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">courses</span> <span class="o">=</span> <span class="n">course_list</span><span class="p">()</span>
@@ -7966,7 +7997,7 @@ $$</p>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>['生産システムI', '特別講義\u3000国際紛争研究（外国語科目）', "特別講義\u3000Japan in Today's World（外国語科目）", '生態統計学', '商法演習']
+<pre>['特別講義\u3000国際紛争研究（外国語科目）', "特別講義\u3000Japan in Today's World（外国語科目）", '生態統計学', '商法演習', 'ロシア・旧ソ連法']
 </pre>
 </div>
 </div>
@@ -7988,12 +8019,12 @@ $$</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [17]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">vocab_list</span><span class="p">():</span>
   <span class="n">keyword</span> <span class="o">=</span> <span class="p">[]</span>
-  <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'data/keyword_list.csv'</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+  <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'../data/keyword_list.csv'</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
     <span class="n">reader</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
 
     <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">reader</span><span class="p">:</span>
@@ -8009,7 +8040,7 @@ $$</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [18]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">vocab</span> <span class="o">=</span> <span class="n">vocab_list</span><span class="p">()</span>
@@ -8048,7 +8079,7 @@ $$</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [19]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">count_df</span><span class="p">(</span><span class="n">courses</span><span class="p">,</span> <span class="n">vocab</span><span class="p">):</span>
@@ -8071,7 +8102,7 @@ $$</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [20]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">count</span> <span class="o">=</span> <span class="n">count_df</span><span class="p">(</span><span class="n">courses</span><span class="p">,</span> <span class="n">vocab</span><span class="p">)</span>
@@ -8088,7 +8119,7 @@ $$</p>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>[(0, 0), (1, 28), (2, 14), (3, 9), (4, 53)]
+<pre>[(0, 0), (1, 821), (2, 503), (3, 460), (4, 407)]
 </pre>
 </div>
 </div>
@@ -8099,7 +8130,7 @@ $$</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [21]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="nb">list</span><span class="p">(</span><span class="n">count</span><span class="o">.</span><span class="n">items</span><span class="p">())[:</span><span class="mi">5</span><span class="p">]:</span>
@@ -8117,10 +8148,10 @@ $$</p>
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>keyword 0
-演習 28
-特殊 14
-講義 9
-科学 53
+演習 821
+特殊 503
+講義 460
+科学 407
 </pre>
 </div>
 </div>
@@ -8143,7 +8174,7 @@ $$</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [22]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">lec_word_matrix</span><span class="p">(</span><span class="n">_courses</span><span class="p">,</span> <span class="n">_vocab</span><span class="p">):</span>
@@ -8162,15 +8193,54 @@ $$</p>
 </div>
 </div>
 </div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=349b914e">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [23]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">lec_word_matrix</span><span class="p">(</span><span class="n">courses</span><span class="p">,</span> <span class="n">vocab</span><span class="p">)))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">lec_word_matrix</span><span class="p">(</span><span class="n">courses</span><span class="p">,</span> <span class="n">vocab</span><span class="p">)[:</span><span class="mi">10</span><span class="p">,:</span><span class="mi">10</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>(4629, 979)
+[[0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 1. 0. 1. 0. 0. 0. 0.]
+ [0. 0. 0. 1. 0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+ [0. 1. 0. 0. 0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]]
+</pre>
+</div>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=6bd9140d">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [15]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [24]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">lec_word_matrix</span><span class="p">(</span><span class="n">courses</span><span class="p">,</span> <span class="n">vocab</span><span class="p">))</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># 正解なら17731</span>
+<span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">lec_word_matrix</span><span class="p">(</span><span class="n">courses</span><span class="p">,</span> <span class="n">vocab</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
@@ -8181,9 +8251,9 @@ $$</p>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[15]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[24]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>np.float64(804.0)</pre>
+<pre>np.float64(17731.0)</pre>
 </div>
 </div>
 </div>
@@ -8193,17 +8263,368 @@ $$</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [17]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [25]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># このデータでは合計は 804（header行を含む場合）</span>
-<span class="k">assert</span> <span class="mi">804</span> <span class="o">==</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">lec_word_matrix</span><span class="p">(</span><span class="n">courses</span><span class="p">,</span> <span class="n">vocab</span><span class="p">))</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">assert</span> <span class="mi">17731</span> <span class="o">==</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">lec_word_matrix</span><span class="p">(</span><span class="n">courses</span><span class="p">,</span> <span class="n">vocab</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
 </div>
 </div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=a4bf1fcf">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Q2.4.2">Q2.4.2<a class="anchor-link" href="#Q2.4.2">¶</a></h3><p>Q2.4.1で作成した講義-単語行列の各要素を、その講義の講義名に単語が含まれるか否かの 1or0ではなく、その講義の講義名に単語が何回含まれるか(TF: Term Frequency)で表した行列を作成して返す <code>lec_word_tf_matrix()</code> 関数を完成させてください。</p>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=4fdc3cee">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [26]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">lec_word_tf_matrix</span><span class="p">(</span><span class="n">_courses</span><span class="p">,</span> <span class="n">_vocab</span><span class="p">):</span>
+    <span class="c1">###(講義数,単語数)の行列を初期化するコード(ヒント np.zeros()) ###</span>
+    <span class="n">lec_tf</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="nb">len</span><span class="p">(</span><span class="n">_courses</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">_vocab</span><span class="p">)))</span>
+
+    <span class="c1">### lec_word[i,j]="講義名courses[i]に単語vocab[j]が含まれる数”、とする処理のコード ###</span>
+    <span class="c1"># 各講義・各単語についてチェック</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">_courses</span><span class="p">)):</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">_vocab</span><span class="p">)):</span>
+            <span class="k">if</span> <span class="n">_vocab</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="ow">in</span> <span class="n">_courses</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
+                <span class="n">lec_tf</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">_courses</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="n">_vocab</span><span class="p">[</span><span class="n">j</span><span class="p">])</span>
+
+    <span class="k">return</span> <span class="n">lec_tf</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=2d02fd45">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [27]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># 正解なら18045</span>
+<span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">lec_word_tf_matrix</span><span class="p">(</span><span class="n">courses</span><span class="p">,</span> <span class="n">vocab</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[27]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>np.float64(18045.0)</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=5add7066">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [28]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># 講義「情報社会及び情報倫理」は「情報」が2回出るので行列要素が2</span>
+<span class="n">lec_word_tf_matrix</span><span class="p">(</span><span class="n">courses</span><span class="p">,</span> <span class="n">vocab</span><span class="p">)[</span><span class="n">courses</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s1">'情報社会及び情報倫理'</span><span class="p">),</span> <span class="n">vocab</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s1">'情報'</span><span class="p">)]</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[28]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>np.float64(2.0)</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=202fb8e0">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Q2.4.3">Q2.4.3<a class="anchor-link" href="#Q2.4.3">¶</a></h3><p>Q2.4.2で作成した講義-単語行列の各要素(講義$i$の単語$j$の$TF_{ij}$)にその単語のIDF値を掛けたTFIDF値を要素とする行列を作成して返す <code>lec_word_tfidf_matrix()</code> 関数を完成させてください。</p>
+<p>作成した行列は変数 <code>tfidf_matrix</code> で受け取ります。</p>
+<p>$$\text{TFIDF}_{ij} = \text{TF}_{ij} \times \log\left(\frac{N}{\text{DF}_j}\right)$$
+です。</p>
+<ul>
+<li>$\text{TF}_{ij}$: Q2.4.2 の値（講義 $i$ に単語 $j$ が何回出るか）</li>
+<li>$\text{DF}_j$: 単語 $j$ を含む講義数（Q2.3）</li>
+<li>$N$: 講義総数（<code>len(courses)</code>）</li>
+</ul>
+<p>ここで、講義i、単語jのTFIDF値はコードで以下のように定義</p>
+<div class="highlight"><pre><span></span><span class="n">TFIDF</span><span class="o">=</span><span class="n">TF_ij</span><span class="o">*</span><span class="n">log</span><span class="p">(</span><span class="n">すべての講義数</span><span class="o">/</span><span class="n">単語</span><span class="err">」</span><span class="n">のDF</span><span class="p">)</span><span class="o">=</span><span class="n">TF_ij</span><span class="o">*</span><span class="n">log</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">courses</span><span class="p">)</span><span class="o">/</span><span class="n">d</span> <span class="n">f</span><span class="p">[</span><span class="n">j</span><span class="p">])</span>
+</pre></div>
+<p>log の計算には np.log()を使用してよいです。</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=3c35406a">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [35]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">lec_word_tfidf_matrix</span><span class="p">(</span><span class="n">_courses</span><span class="p">,</span> <span class="n">_vocab</span><span class="p">,</span> <span class="n">_df</span><span class="p">):</span>
+    
+    <span class="n">lec_word</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="nb">len</span><span class="p">(</span><span class="n">_courses</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">_vocab</span><span class="p">)))</span>
+    <span class="n">N</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">_courses</span><span class="p">)</span> <span class="c1"># 全講義数</span>
+
+    <span class="c1"># 各講義・各単語についてループ</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">_courses</span><span class="p">)):</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">_vocab</span><span class="p">)):</span>
+            <span class="c1"># TF: 講義 i の中に 単語 j が何回出現するか</span>
+            <span class="n">tf</span> <span class="o">=</span> <span class="n">_courses</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="n">_vocab</span><span class="p">[</span><span class="n">j</span><span class="p">])</span>
+
+            <span class="c1"># DF: 単語 j を含む講義数（Q2.3 で求めた値）</span>
+            <span class="n">df_val</span> <span class="o">=</span> <span class="n">_df</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
+
+            <span class="c1"># DFが0（どの講義にも出てこない単語）の場合は、TFも必ず0なのでTFIDFは0とする</span>
+            <span class="k">if</span> <span class="n">df_val</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">tf</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="n">lec_word</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="c1"># TFIDF = TF_ij * log(N / DF_j)</span>
+                <span class="n">lec_word</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">tf</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">N</span> <span class="o">/</span> <span class="n">df_val</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">lec_word</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=62529ed8">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [36]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">tfidf_matrix</span> <span class="o">=</span> <span class="n">lec_word_tfidf_matrix</span><span class="p">(</span><span class="n">courses</span><span class="p">,</span> <span class="n">vocab</span><span class="p">,</span> <span class="n">count</span><span class="p">)</span>
+<span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">tfidf_matrix</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[36]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>np.float64(78881.188827943)</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=1d9236ba">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [38]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># 講義「情報社会及び情報倫理」には「情報」が2回含まれ、「情報」のDF値は155なので対応する行列の要素の値は2* log(4628/155) = 6.79 </span>
+<span class="n">tfidf_matrix</span><span class="p">[</span><span class="n">courses</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s1">'情報社会及び情報倫理'</span><span class="p">),</span> <span class="n">vocab</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s1">'情報'</span><span class="p">)]</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[38]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>np.float64(6.793342048224048)</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=808edf0a">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Q2.5">Q2.5<a class="anchor-link" href="#Q2.5">¶</a></h3><p>Q2.4.3で作成した講義-単語行列を元に、入力の講義に対してcos類似度に基づいて他のすべての講義との類似度を計算し、類似する講義名をキー、その類似度を値とした辞書を返す以下の <code>find_similar_course()</code> 関数を完成させてください。その際、入力の講義および類似度が0の講義は辞書に含めないようにしてください。cos類似度の計算にはQ1で作成した関数を使ってもよいです。</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=7a1e270c">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [43]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#_target: 入力講義のID</span>
+<span class="c1">#_matrix: 講義・単語行列(TFIDF値)</span>
+<span class="c1">#_courses: 講義リスト</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">find_similar_course</span><span class="p">(</span><span class="n">_target</span><span class="p">,</span> <span class="n">_matrix</span><span class="p">,</span> <span class="n">_courses</span><span class="p">):</span>
+    <span class="c1"># 入力講義のペクトル_matrix[target]と各講義のベクトル_matrix[i]の類似度を計算するコード</span>
+    <span class="n">target_vec</span> <span class="o">=</span> <span class="n">_matrix</span><span class="p">[</span><span class="n">_target</span><span class="p">]</span>
+    <span class="c1"># 結果を入れる辞書（講義名 -&gt; 類似度）</span>
+    <span class="n">sim_dict</span> <span class="o">=</span> <span class="p">{}</span>
+
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">_courses</span><span class="p">)):</span>
+        <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="n">_target</span><span class="p">:</span>
+            <span class="k">continue</span>
+
+        <span class="n">vec_i</span> <span class="o">=</span> <span class="n">_matrix</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+        <span class="n">sim</span> <span class="o">=</span> <span class="n">cos_sim</span><span class="p">(</span><span class="n">target_vec</span><span class="p">,</span> <span class="n">vec_i</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">sim</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">sim_dict</span><span class="p">[</span><span class="n">_courses</span><span class="p">[</span><span class="n">i</span><span class="p">]]</span> <span class="o">=</span> <span class="n">sim</span>
+
+    <span class="k">return</span> <span class="n">sim_dict</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=26605d4f">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [45]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">title</span><span class="o">=</span><span class="s2">"医学データの統計解析実習"</span> <span class="c1">#入力の講義名</span>
+<span class="n">results</span><span class="o">=</span><span class="n">find_similar_course</span><span class="p">(</span><span class="n">courses</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">title</span><span class="p">),</span> <span class="n">tfidf_matrix</span><span class="p">,</span> <span class="n">courses</span><span class="p">)</span> <span class="c1">#類似講義の辞書を受け取る</span>
+
+<span class="n">df</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">results</span><span class="o">.</span><span class="n">items</span><span class="p">()),</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">'title'</span><span class="p">,</span> <span class="s1">'similarity'</span><span class="p">])</span>
+
+<span class="n">df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">'similarity'</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[45]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>title</th>
+<th>similarity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>119</th>
+<td>医学データの統計解析</td>
+<td>101.367140</td>
+</tr>
+<tr>
+<th>6</th>
+<td>高度教養特殊演習（臨床発達精神医学実習）</td>
+<td>73.156865</td>
+</tr>
+<tr>
+<th>289</th>
+<td>獣医学基礎実習</td>
+<td>54.172554</td>
+</tr>
+<tr>
+<th>291</th>
+<td>卒業論文（獣医学専修）</td>
+<td>50.920370</td>
+</tr>
+<tr>
+<th>60</th>
+<td>金融データと金融モデル分析</td>
+<td>46.753994</td>
+</tr>
+<tr>
+<th>295</th>
+<td>応用獣医学インターンシップ</td>
+<td>45.917016</td>
+</tr>
+<tr>
+<th>166</th>
+<td>地球物理データ解析</td>
+<td>45.299615</td>
+</tr>
+<tr>
+<th>85</th>
+<td>システムデータ解析</td>
+<td>42.590030</td>
+</tr>
+<tr>
+<th>136</th>
+<td>精神医学</td>
+<td>40.266671</td>
+</tr>
+<tr>
+<th>100</th>
+<td>情報工学概論（アルゴリズムとデータ構造）</td>
+<td>40.240402</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=fa93eef9">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
